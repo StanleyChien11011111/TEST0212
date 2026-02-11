@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #71c083; -webkit-text-stroke: #71c083}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #b76ff7; -webkit-text-stroke: #b76ff7}
+    span.s1 {font-kerning: none; background-color: #171818}
+    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
+    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
+    span.s4 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
+    span.s5 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
+    span.s6 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
+    span.s7 {font-kerning: none}
+    span.s8 {font-kerning: none; color: #b76ff7; background-color: #171818; -webkit-text-stroke: 0px #b76ff7}
+    span.s9 {font-kerning: none; color: #d4d4d4; background-color: #171818; -webkit-text-stroke: 0px #d4d4d4}
+    span.s10 {font-kerning: none; color: #a7c598; background-color: #171818; -webkit-text-stroke: 0px #a7c598}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-TW"</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">師大地球科學系學會官方網站</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;!-- 引入 Tailwind CSS --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;!-- 引入 React 和 ReactDOM --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">crossorigin</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react@18/umd/react.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">crossorigin</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;!-- 引入 Babel 用於解析 JSX --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;!-- 設定 Tailwind 字型與基本樣式 --&gt;</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">/* 引入 Google Fonts */</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s8">@import</span><span class="s5"> </span><span class="s6">url</span><span class="s9">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;700;900&amp;display=swap'</span><span class="s9">);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s4">body</span><span class="s1"> </span><span class="s9">{</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">font-family:</span><span class="s5"> </span><span class="s1">"Noto Sans TC"</span><span class="s9">,</span><span class="s5"> </span><span class="s1">"Microsoft JhengHei"</span><span class="s9">,</span><span class="s5"> </span><span class="s6">sans-serif</span><span class="s9">;</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s1">background-color:</span><span class="s5"> #ffffff</span><span class="s9">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s2">color:</span><span class="s1"> #1a1a1a</span><span class="s9">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s9">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">h1</span><span class="s9">,</span><span class="s5"> </span><span class="s1">h2</span><span class="s9">,</span><span class="s5"> </span><span class="s1">h3</span><span class="s9">,</span><span class="s5"> </span><span class="s1">h4</span><span class="s9">,</span><span class="s5"> </span><span class="s1">.serif-font</span><span class="s5"> </span><span class="s9">{</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">font-family:</span><span class="s5"> </span><span class="s1">"Noto Serif TC"</span><span class="s9">,</span><span class="s5"> </span><span class="s6">serif</span><span class="s9">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s9">}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">.scrollbar-hide::-webkit-scrollbar</span><span class="s5"> </span><span class="s9">{</span><span class="s5"> </span><span class="s2">display:</span><span class="s5"> </span><span class="s6">none</span><span class="s9">;</span><span class="s5"> </span><span class="s9">}</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s4">.scrollbar-hide</span><span class="s5"> </span><span class="s9">{</span><span class="s5"> </span><span class="s1">-ms-overflow-style:</span><span class="s5"> </span><span class="s6">none</span><span class="s9">;</span><span class="s5"> </span><span class="s1">scrollbar-width:</span><span class="s5"> </span><span class="s6">none</span><span class="s9">;</span><span class="s5"> </span><span class="s9">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">.fade-in-up</span><span class="s5"> </span><span class="s9">{</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">animation:</span><span class="s5"> </span><span class="s1">fadeInUp</span><span class="s5"> </span><span class="s10">0.8s</span><span class="s5"> </span><span class="s1">ease-out</span><span class="s5"> </span><span class="s1">forwards</span><span class="s9">;</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s1">opacity:</span><span class="s5"> </span><span class="s10">0</span><span class="s9">;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">transform:</span><span class="s5"> </span><span class="s1">translateY(</span><span class="s10">20px</span><span class="s1">)</span><span class="s9">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s9">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p8"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">@keyframes</span><span class="s5"> </span><span class="s6">fadeInUp</span><span class="s5"> </span><span class="s9">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s6">to</span><span class="s1"> </span><span class="s9">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s10">1</span><span class="s9">;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s2">transform:</span><span class="s5"> </span><span class="s1">translateY(</span><span class="s10">0</span><span class="s1">)</span><span class="s9">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span></span><span class="s9">}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s9">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const { useState, useEffect, useRef } = React;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 圖示組件 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const IconWrapper = ({ children, size = 24, className = "" }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{children}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const ChevronDown = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="m6 9 6 6 6-6"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const ChevronLeft = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="m15 18-6-6 6-6"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const ChevronRight = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="m9 18 6-6-6-6"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const Download = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/&gt;&lt;polyline points="7 10 12 15 17 10"/&gt;&lt;line x1="12" y1="15" x2="12" y2="3"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const ExternalLink = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const Calendar = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;rect width="18" height="18" x="3" y="4" rx="2" ry="2"/&gt;&lt;line x1="16" y1="2" x2="16" y2="6"/&gt;&lt;line x1="8" y1="2" x2="8" y2="6"/&gt;&lt;line x1="3" y1="10" x2="21" y2="10"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const ArrowRight = (props) =&gt; &lt;IconWrapper {...props}&gt;&lt;path d="M5 12h14"/&gt;&lt;path d="m12 5 7 7-7 7"/&gt;&lt;/IconWrapper&gt;;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 資料整合區 (方便管理) ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const eventsData = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>id: 1,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>title: "萬聖趴",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>date: "2025/10/31",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>image: "https://drive.google.com/thumbnail?id=1pXmMYvZO8IlypMpRt3N3x2ZP_iAUHyvW&amp;sz=w3840",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>desc: "透過小飲料與趣味遊戲，促進同學間及師生間的交流互動，讓大家在平時緊湊而高壓的學習生活中，能夠暫時放下壓力，在輕鬆愉快的氛圍中休息片刻，調整心情，為接下來的學習重新充電。"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>id: 2,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>title: "四系聯合迎新烤肉",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>subtitle: "生科 × 地科 × 營養 × 化學",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>date: "2025/10/02",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>image: "https://drive.google.com/thumbnail?id=1TY4kR8JliVkBLJgeE1IyRd5Zh2dIFgrc&amp;sz=w3840",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>desc: "今年我們結合了師大生科、地科、營養、化學共四大系，準備一場絕對不容錯過的迎新烤肉派對！"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>id: 3,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>title: "三系聯合宿營",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>date: "2025/09/20-21",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>image: "https://drive.google.com/thumbnail?id=1DijSfLR_Onxfg-SSYRxxESWysDcP21mu&amp;sz=w3840",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>desc: "兩天一夜的活動，此次與師大東亞與臺文系共同舉辦。"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>},</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>id: 4,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>title: "伯樂大學堂 學系之夜",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>date: "2025/08/27",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>image: "https://drive.google.com/thumbnail?id=1FB2JCcReTGmoINqnqeIl9MpbCVuhWeXj&amp;sz=w3840",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>desc: "新生參與的第一個活動，透過系上老師對系上的介紹、行星分家與抽直屬活動，讓新生更快適應並與大學生活接軌。"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>];</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 輪播圖組件 (HeroCarousel) ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const HeroCarousel = ({ onNavigate }) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const slides = eventsData;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const [current, setCurrent] = useState(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const timeoutRef = useRef(null);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const resetTimeout = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>if (timeoutRef.current) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>clearTimeout(timeoutRef.current);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>useEffect(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>resetTimeout();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>timeoutRef.current = setTimeout(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>setCurrent((prevIndex) =&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>prevIndex === slides.length - 1 ? 0 : prevIndex + 1</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}, 5000);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>return () =&gt; { resetTimeout(); };</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}, [current]);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const nextSlide = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>if(e) e.stopPropagation();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>setCurrent(current === slides.length - 1 ? 0 : current + 1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const prevSlide = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>if(e) e.stopPropagation();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>setCurrent(current === 0 ? slides.length - 1 : current - 1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden mb-12 group bg-slate-100 cursor-pointer"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>className="w-full h-full flex transition-transform duration-700 ease-out"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>style={{ transform: `translateX(-${current * 100}%)` }}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>onClick={() =&gt; onNavigate('events')}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{slides.map((slide) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div key={slide.id} className="min-w-full h-full relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;img<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>src={slide.image}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>alt={slide.title}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>className="w-full h-full object-cover"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>referrerPolicy="no-referrer"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>onError={(e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>e.target.onerror = null;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>e.target.src = "https://placehold.co/1920x1080/e2e8f0/64748b?text=Image+Loading+Error";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="absolute bottom-0 left-0 w-full p-6 md:p-12 text-white"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="max-w-5xl mx-auto border-l-4 border-[#fff] pl-4 md:pl-6 transform transition-all duration-700 translate-y-0"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span className="block text-sm md:text-lg font-medium tracking-wider mb-2 text-blue-200 drop-shadow-md"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{slide.date}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 className="text-2xl md:text-5xl font-bold serif-font tracking-wide drop-shadow-md flex flex-wrap items-center gap-3 leading-tight"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{slide.title}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{slide.subtitle &amp;&amp; &lt;span className="text-lg md:text-2xl font-light opacity-90 block w-full mt-1"&gt;{slide.subtitle}&lt;/span&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm bg-white/20 p-1.5 rounded-full mt-2"&gt;&lt;ArrowRight size={24} /&gt;&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button onClick={prevSlide} className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/20 hover:bg-black/40 backdrop-blur-sm text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-white/20 z-10"&gt;&lt;ChevronLeft size={32} /&gt;&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button onClick={nextSlide} className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/20 hover:bg-black/40 backdrop-blur-sm text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-white/20 z-10"&gt;&lt;ChevronRight size={32} /&gt;&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="absolute bottom-6 right-8 flex gap-3 z-10"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{slides.map((_, idx) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;button</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>key={idx}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>onClick={(e) =&gt; { e.stopPropagation(); setCurrent(idx); }}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>className={`h-2.5 rounded-full transition-all duration-300 border border-white/50 shadow-sm</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>${current === idx ? 'bg-white w-10' : 'bg-white/30 w-2.5 hover:bg-white/60'}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 主要應用程式 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>function App() {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const [activeTab, setActiveTab] = useState('intro');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>useEffect(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>window.scrollTo({ top: 0, behavior: 'smooth' });</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}, [activeTab]);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const navItems = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ id: 'intro', label: '學會簡介' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ id: 'events', label: '活動介紹' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ id: 'history', label: '學會歷史' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ id: 'members', label: '成員介紹' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ id: 'docs', label: '相關文件' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const renderContent = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>switch (activeTab) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>case 'intro': return &lt;IntroSection onNavigate={setActiveTab} /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>case 'events': return &lt;EventsSection /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>case 'history': return &lt;HistorySection /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>case 'members': return &lt;MembersSection /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>case 'docs': return &lt;DocsSection /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>default: return &lt;IntroSection onNavigate={setActiveTab} /&gt;;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="min-h-screen bg-white text-[#1a1a1a] pb-12 flex flex-col"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* Header 區域 - 移除頂部藍色聯絡資訊列 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{/* 2. 主要標題區 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="py-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="max-w-5xl mx-auto px-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                 </span>&lt;div className="flex flex-col md:flex-row items-center justify-between gap-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex items-center gap-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{/* Logo 圖片 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;img<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>src="https://drive.google.com/thumbnail?id=1N32AeCpmWelPgK1uB0EyJoisDDJzdcck&amp;sz=w400"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>alt="系學會 Logo"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>className="w-16 h-16 rounded-full object-cover shadow-sm border border-gray-100 bg-white"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>referrerPolicy="no-referrer"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;div className="flex flex-col items-center md:items-start"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span className="text-xs font-medium text-gray-500 tracking-[0.15em] uppercase"&gt;National Taiwan Normal University&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h1 className="text-xl md:text-2xl font-bold text-[#003B71] tracking-wide serif-font"&gt;地球科學系學會&lt;/h1&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                 </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{/* 3. 導覽列 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="border-t border-gray-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="max-w-5xl mx-auto px-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;nav className="flex justify-center md:justify-start space-x-8 overflow-x-auto scrollbar-hide"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{navItems.map((item) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>key={item.id}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>onClick={() =&gt; setActiveTab(item.id)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className={`py-4 text-sm tracking-widest transition-all duration-300 border-b-2 font-medium</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>${activeTab === item.id ? 'border-[#003B71] text-[#003B71]' : 'border-transparent text-gray-400 hover:text-gray-800'}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{item.label}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/nav&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/header&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* 主要內容容器 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;main className="w-full flex-grow"&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{renderContent()}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/main&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* 頁尾 - 移除圖示，完全置中排版 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;footer className="bg-slate-50 border-t border-gray-200 mt-20 pt-16 pb-12"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="max-w-5xl mx-auto px-6 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="flex flex-col items-center gap-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Logo &amp; Copyright */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="mb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span className="font-serif font-bold text-[#003B71] text-xl"&gt;NTNU Earth Sciences&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-sm text-gray-500 mb-1"&gt;國立臺灣師範大學 地球科學系學會&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-xs text-gray-400 tracking-wider"&gt;© {new Date().getFullYear()} All Rights Reserved.&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Contact Info - 無圖示，文字置中，冒號改空格 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="space-y-4 flex flex-col items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h4 className="font-bold text-gray-900 tracking-wide uppercase text-sm border-b border-gray-200 pb-2 inline-block"&gt;聯絡我們 Contact Us&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="space-y-3 text-sm text-gray-600"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;地址 (11677) 台北市文山區汀州路四段88號&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;a href="mailto:ntnues42@gmail.com" className="hover:text-[#003B71] transition-colors"&gt;email ntnues42@gmail.com&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;a href="https://www.facebook.com/ntnuessa" target="_blank" rel="noreferrer" className="hover:text-[#003B71] transition-colors"&gt;Facebook 國立臺灣師範大學 地球科學系學會&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;a href="https://instagram.com/ntnu_es" target="_blank" rel="noreferrer" className="hover:text-[#003B71] transition-colors"&gt;IG ntnu_es&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/footer&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 1. 簡介區塊 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const IntroSection = ({ onNavigate }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div className="fade-in-up"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{/* 加入輪播圖組件，並傳入導航函數 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;HeroCarousel onNavigate={onNavigate} /&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{/* 活動預告區塊 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-4xl mx-auto px-6 mb-20 -mt-6 relative z-20"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="bg-white p-6 md:p-8 shadow-xl shadow-blue-900/5 rounded-lg border border-gray-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 className="text-[#003B71] font-bold tracking-widest text-sm uppercase mb-6 flex items-center gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;Calendar size={18} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>Upcoming Events 2026</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="grid md:grid-cols-2 gap-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{/* Event Item 1 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="flex gap-4 items-start group"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex-shrink-0 w-16 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-2xl font-bold text-[#003B71] serif-font"&gt;07&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-xs font-medium text-gray-400 uppercase"&gt;MAR&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-xs text-gray-300"&gt;2026&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="border-l border-gray-200 pl-4 transition-colors group-hover:border-[#003B71]"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h4 className="font-bold text-gray-900 text-lg mb-1 group-hover:text-[#003B71] transition-colors"&gt;第四屆小地盃&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-sm text-gray-500 leading-relaxed"&gt;系上傳統體育競賽，歡迎組隊參加。&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{/* Event Item 2 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="flex gap-4 items-start group"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex-shrink-0 w-16 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-2xl font-bold text-[#003B71] serif-font"&gt;20&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-xs font-medium text-gray-400 uppercase"&gt;APR&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="block text-xs text-gray-300"&gt;2026&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="border-l border-gray-200 pl-4 transition-colors group-hover:border-[#003B71]"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h4 className="font-bold text-gray-900 text-lg mb-1 group-hover:text-[#003B71] transition-colors"&gt;地科週 &amp; 地科展&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-xs text-[#003B71] font-medium mb-1"&gt;04/20-24 地科週 | 04/25 地科展&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-sm text-gray-500 leading-relaxed"&gt;透過學生舉辦的展覽，結合系上實驗室的開放，將地科知識科普給大眾。&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-4xl mx-auto px-6 space-y-20 pb-12"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* Slogan 區塊 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;section className="text-center py-10 border-b border-gray-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 className="text-4xl md:text-5xl font-black text-[#003B71] mb-6 leading-tight serif-font"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>凝聚系上情感&lt;br/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className="text-3xl md:text-4xl text-[#003B71]/80 mt-2 block"&gt;共創美好回憶&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="w-16 h-1 bg-[#003B71] mx-auto mb-8"&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto leading-loose font-light"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>歡迎來到師大地科系學會官方網站。&lt;br/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>我們致力於搭起學生與系所之間的橋樑，&lt;br className="hidden md:block"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>舉辦學術講座、體育競賽與娛樂活動。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* 關於系學會 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;section&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="mb-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className="text-[#003B71] font-bold tracking-widest text-sm uppercase mb-2 block"&gt;About Us&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3 className="text-3xl font-bold text-gray-900 serif-font"&gt;關於系學會&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="prose prose-lg text-gray-600 leading-relaxed space-y-6 text-justify"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>地球科學系學會是一個充滿活力和友情的大家庭，致力於營造融洽的人際關係，讓地科系的學弟妹們能夠在歡樂的氛圍中更深入地認識彼此以及學長姐們。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>我們的活動緊扣著互相認識和團結合作的主旨。從學系之夜的歡談，到系烤的美食時光，每一個活動都是讓你們放鬆心情、交流情感的絕佳機會。制服趴、萬聖趴、聖誕趴等主題趴活動，將帶來歡笑和趣味，讓你們共同創造美好的回憶。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="pl-6 border-l-2 border-[#003B71] italic text-gray-500 my-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>我們了解大學生活中建立起的深厚友誼有多重要。因此，我們安排了系出遊，讓你們能在旅行中更深入地了解彼此。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>此外，我們還舉辦了系展，向校內外展示地科系的凝聚力和多彩活動、學術內容。地科營則是一個帶有教育性質的活動，讓高中生們更能了解地科系。無論你是新生還是資深學長姐，我們都歡迎你加入我們的活動。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{/* 關於學系 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;section className="pt-12 border-t border-gray-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="mb-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className="text-[#003B71] font-bold tracking-widest text-sm uppercase mb-2 block"&gt;Department&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3 className="text-3xl font-bold text-gray-900 serif-font"&gt;關於學系&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="space-y-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="bg-slate-50 p-8 md:p-10"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 className="text-2xl font-bold text-[#003B71] mb-4 serif-font"&gt;注意看 這個校系叫師大地科&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p className="text-xl font-medium text-gray-700 mb-6"&gt;居然是全台唯一五大領域通包的地球解密所！&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p className="text-gray-600 leading-loose"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>師大地科的前身，是1976年(民國65年)從物理系分出來的「地球科學組」 ，後來在1984年正式獨立成系，是全國最早以培養地科老師為宗旨的科系之一。</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p className="mt-4 text-[#003B71] font-bold"&gt;全臺灣只有我們師大地科，五大領域都齊全！我們是唯一！&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="text-gray-600 leading-relaxed space-y-4 text-justify"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;隨著師大轉型為研究型大學，我們也一路進化，設了碩士班、博士班，研究領域超廣：從地質的岩石與斷層、地物的地震與重力、大氣的氣候與天氣、海洋的洋流與生物，到天文的恆星與黑洞，我們全都包辦~&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;不管你想成為科學家還是地科老師，這裡都有路。想教書？我們有師大的超讚教育資源。想研究？我們有超強教授團＋外籍師資，全英授課也不是問題！&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p className="text-sm text-gray-400 mt-4 text-center"&gt;— 師大地科＝研究 × 教學 × 國際視野 × 五大領域全餐 —&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="mt-10"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex items-center justify-between mb-4 border-b border-gray-200 pb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="text-sm font-bold text-gray-400 tracking-wider"&gt;OFFICIAL WEBSITE&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;a href="https://www.es.ntnu.edu.tw/" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 text-[#003B71] hover:underline transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>開啟新視窗 &lt;ExternalLink size={14}/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="w-full h-[500px] bg-gray-50 border border-gray-200"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;iframe<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>src="https://www.es.ntnu.edu.tw/"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>className="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>title="ES NTNU Website"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>loading="lazy"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&gt;&lt;/iframe&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/section&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 2. 活動介紹區塊 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const EventsSection = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>// 直接使用 eventsData 並渲染</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-5xl mx-auto px-6 pt-12 fade-in-up"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="mb-12 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 className="text-3xl font-bold text-[#003B71] serif-font mb-3"&gt;活動介紹&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p className="text-gray-400 text-sm tracking-widest uppercase"&gt;Our Events&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">          </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="grid md:grid-cols-2 gap-8 md:gap-10"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{eventsData.map((event) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div key={event.id} className="bg-white group flex flex-col h-full"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="aspect-video w-full overflow-hidden rounded-lg mb-6 bg-gray-100 shadow-md relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                   </span>&lt;img<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>src={event.image}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>alt={event.title}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>referrerPolicy="no-referrer"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>onError={(e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>e.target.onerror = null;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>e.target.src = "https://placehold.co/1920x1080/e2e8f0/64748b?text=Image+Loading+Error";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>}}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex-grow"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center gap-3 mb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span className="text-xs font-bold text-[#003B71] bg-blue-50 px-2 py-1 rounded border border-blue-100 uppercase tracking-wide"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>Event</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span className="text-sm font-medium text-gray-400 flex items-center gap-1"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;Calendar size={14} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>{event.date}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h3 className="text-2xl font-bold text-gray-900 mb-2 serif-font group-hover:text-[#003B71] transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{event.title}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{event.subtitle &amp;&amp; &lt;p className="text-sm font-bold text-blue-600 mb-3"&gt;{event.subtitle}&lt;/p&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-gray-600 leading-relaxed text-justify"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{event.desc}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 3. 歷史區塊 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const HistorySection = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const milestones = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ year: '2026', title: '章程改寫與選罷法建立', desc: '本會章程上次修訂已是民國一零四年，修改不合時宜的章程，以及將關於選舉部分另外頒布選罷法，以利未來學會運作。' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{ year: '2023', title: '榮獲全校社團評鑑特優', desc: '在全體幹部的努力下，我們的活動品質與組織運作獲得校方高度肯定。' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-2xl mx-auto px-6 pt-12 fade-in-up"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="mb-12 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 className="text-3xl font-bold text-[#003B71] serif-font mb-3"&gt;輝煌歷史&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p className="text-gray-400 text-sm tracking-widest uppercase"&gt;History &amp; Milestones&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="space-y-12 border-l border-gray-200 ml-4 pl-8 md:pl-12 py-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{milestones.map((item, index) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div key={index} className="relative group"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="absolute -left-[41px] md:-left-[57px] top-2 w-3 h-3 rounded-full bg-white border-2 border-[#003B71] group-hover:bg-[#003B71] transition-colors"&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="transition-all"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;span className="text-[#003B71] font-bold text-xl block mb-2 serif-font"&gt;{item.year}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h3 className="text-lg font-bold text-gray-800 mb-3"&gt;{item.title}&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="text-gray-600 text-base leading-relaxed"&gt;{item.desc}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 4. 成員介紹區塊 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const MembersSection = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const termsData = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>id: 40,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>title: "第 40 屆成員",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>active: true,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>departments: [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "會長股", members: ["會長：簡志諭", "副會長：李冠廷"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "公關股", members: ["股員：方彥婷、曾若寧"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "活動股", members: ["股員：李奕德"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "總務股", members: ["股員：張鈞幃、徐秉辰"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "體育股", members: ["股員：張智閔"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "美宣股", members: ["股員：郭傲寒、張微訢"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "器攝股", members: ["股員：謝念祖"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>]</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>id: 39,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>title: "第 39 屆成員",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>active: false,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>departments: [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "會長股", members: ["會長：林佳泓", "副會長：黃筱喻","執秘：李芷妘"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "公關股", members: ["股員：李依璇、李家妤"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "活動股", members: ["股員：林育均、周哲宇"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "總務股", members: ["股員：張格順、廖頤柔"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "體育股", members: ["股員：曾新堯"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "美宣股", members: ["股員：吳奕宏"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "器攝股", members: ["股員：陳俊宇、蕭徹"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "學術股", members: ["股員：楊硯程"] },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>]</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-4xl mx-auto px-6 pt-12 space-y-8 fade-in-up"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="mb-12 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 className="text-3xl font-bold text-[#003B71] serif-font mb-3"&gt;歷屆成員&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p className="text-gray-400 text-sm tracking-widest uppercase"&gt;Our Team Members&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{termsData.map((term) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;MemberAccordion key={term.id} term={term} defaultOpen={term.id === 40} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const MemberAccordion = ({ term, defaultOpen }) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const [isOpen, setIsOpen] = useState(defaultOpen);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="border-b border-gray-200"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button onClick={() =&gt; setIsOpen(!isOpen)} className="w-full py-6 flex items-center justify-between bg-white hover:text-[#003B71] transition-colors focus:outline-none group"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="flex items-center gap-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span className={`text-2xl font-serif font-bold ${term.active ? 'text-[#003B71]' : 'text-gray-300 group-hover:text-gray-500'}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{term.id &lt; 10 ? `0${term.id}` : term.id}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="text-left"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 className="text-lg font-medium text-gray-800 group-hover:text-[#003B71] transition-colors"&gt;{term.title}&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{term.active &amp;&amp; &lt;span className="text-[10px] tracking-wider font-bold text-white bg-[#003B71] px-2 py-1 rounded-sm uppercase"&gt;Current&lt;/span&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className={`text-gray-300 transition-transform duration-500 ${isOpen ? 'rotate-180 text-[#003B71]' : 'rotate-0'}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">               </span>&lt;ChevronDown size={20} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className={`grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${isOpen ? 'grid-rows-[1fr] opacity-100 mb-8' : 'grid-rows-[0fr] opacity-0'}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="overflow-hidden"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="pt-4 pb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{term.departments.map((dept, idx) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div key={idx} className="group/dept"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;h4 className="font-bold text-gray-900 mb-3 text-sm tracking-wide border-b border-gray-100 pb-2 flex items-center gap-2"&gt;{dept.name}&lt;/h4&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;ul className="space-y-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{dept.members.map((member, mIdx) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;li key={mIdx} className="text-gray-500 text-sm pl-1"&gt;{member}&lt;/li&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/ul&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>// --- 5. 文件區塊 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const DocsSection = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>const documents = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>id: 1,<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>title: '地球科學系系學會組織章程',<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>date: '2015/04/28',<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>size: '預覽',<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>type: 'PDF',</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>link: 'https://drive.google.com/file/d/19uZCkaZ85vRY-kxlWXOJqHkHwvD85e_L/view?usp=share_link'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div className="max-w-4xl mx-auto px-6 pt-12 fade-in-up"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">           </span>&lt;div className="mb-12 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 className="text-3xl font-bold text-[#003B71] serif-font mb-3"&gt;相關文件&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p className="text-gray-400 text-sm tracking-widest uppercase"&gt;Downloads &amp; Resources&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="grid gap-0 border-t border-gray-200"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{documents.map((doc) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;a<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>key={doc.id}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>href={doc.link}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>target="_blank"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>rel="noreferrer"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>className="group flex items-center justify-between py-6 border-b border-gray-200 hover:bg-gray-50 transition-colors px-4 -mx-4 cursor-pointer"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex items-center gap-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className={`text-xs font-bold px-2 py-1 rounded border ${doc.type === 'PDF' ? 'text-red-600 border-red-200' : 'text-blue-600 border-blue-200'}`}&gt;{doc.type}&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 className="font-medium text-gray-900 text-lg mb-1 group-hover:text-[#003B71] transition-colors"&gt;{doc.title}&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="text-xs text-gray-400 flex gap-3"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;span className="flex items-center gap-1"&gt;&lt;Calendar size={12}/&gt; {doc.date}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/a&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>const root = ReactDOM.createRoot(document.getElementById('root'));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>root.render(&lt;App /&gt;);</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+</body>
+</html>
